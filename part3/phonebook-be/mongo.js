@@ -36,7 +36,7 @@ if (process.argv.length === 3) {
   const name = process.argv[3]
   const number = process.argv[4]
 
-  new Person({ name, number})
+  new Person({ name, number })
     .save()
     .then(() => {
       console.log(`added ${name} number ${number} to phonebook`)
